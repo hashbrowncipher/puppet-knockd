@@ -1,0 +1,10 @@
+# HEADER: Warning: This file is managed by puppet,
+# HEADER: *do not* edit manually.
+
+[options]
+  Interface = <%= @interface %>
+  LogFile   = <%= @logfile %>
+  PidFile   = <%= @pidfile %>
+  <% if @use_syslog -%>
+  <%= UseSyslog %>
+  <% end %>

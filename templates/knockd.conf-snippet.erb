@@ -1,0 +1,33 @@
+<% if @open_sequence %>
+[Open<%= @title %>]
+<% if @open_sequence -%>
+  sequence      = <%= @open_sequence -%>
+<% else %>
+  one_time_sequences = <%= @one_time_sequences -%>
+<% end %>
+  seq_timeout = <%= @seq_timeout %>
+  command     = <%= @start_command %>
+  tcpflags    = <%= @tcpflags %>
+
+[Close<%= @title %>]
+<% if @close_sequence -%>
+  sequence      = <%= @close_sequence -%>
+<% else %>
+  one_time_sequences = <%= @one_time_sequences -%>
+<% end %>
+  seq_timeout = <%= @seq_timeout %>
+  command     = <%= @stop_command %>
+  tcpflags    = <%= @tcpflags %>
+<% else %>
+[OpenClose<%= @title %>]
+<% if @sequence -%>
+  sequence      = <%= @sequence -%>
+<% else %>
+  one_time_sequences = <%= @one_time_sequences -%>
+<% end %>
+  seq_timeout   = <%= @seq_timeout %>
+  tcpflags      = <%= @tcpflags %>
+  start_command = <%= @start_command %>
+  cmd_timeout   = <%= @cmd_timeout %>
+  stop_command  = <%= @stop_command %>
+<% end %>
