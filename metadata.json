@@ -1,0 +1,29 @@
+{
+  "name": "xdrum-knockd",
+  "version": "0.0.2",
+  "author": "Alessio Cassibba (X-Drum)",
+  "summary": "Knockd Module",
+  "license": "Apache 2.0",
+  "source": "git://github.com/x-drum/puppet-knockd",
+  "project_page": "https://github.com/x-drum/puppet-knockd",
+  "issues_url": "https://github.com/x-drum/puppet-knockd/issues",
+  "description": "Configure and install knockd service.",
+  "tags": [
+    "ubuntu",
+    "debian",
+    "knockd",
+    "knock",
+    "portknocker",
+    "portknocking",
+    "freebsd",
+    "gentoo",
+    "rhel"
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-concat",
+      "version_requirement": ">= 1.0.2"
+    },
+    {"name":"puppetlabs-concat","version_requirement":">= 1.0.2"}
+  ]
+}
