@@ -43,6 +43,16 @@ class knockd (
 		fail("Please specify a valid interface.")
 	}
 
+	if $::operatingsystem == Debian {
+		file { "/etc/default/knockd":
+			ensure  => present,
+			owner   => $knockd::params::default_owner,
+			group   => $knockd::params::default_group,
+			mode    => '0644',
+			content => "START_KNOCKD=1\n",
+		}
+	}
+
 	package { $knockd::params::package_name:
 		ensure => $package_ensure,
 	}
