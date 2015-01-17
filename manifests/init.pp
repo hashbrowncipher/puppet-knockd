@@ -18,7 +18,7 @@
 # pidfile:
 #   pidfile to use when in daemon mode, (defaults to: /var/run/knockd.pid).
 #
-# interfacve:
+# interface:
 #   network interface to listen on (mandatory).
 #
 # Examples:
@@ -26,8 +26,8 @@
 # class { "knockd":
 # 	interface => 'eth0',
 # }
-#	
-# Copyright 2014 Alessio Cassibba (X-Drum), unless otherwise noted.
+#
+# Copyright 2015 Alessio Cassibba (X-Drum), unless otherwise noted.
 #
 class knockd (
 	$package_name = $knockd::params::package_name,

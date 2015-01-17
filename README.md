@@ -1,9 +1,9 @@
 puppet-knockd
 ==========
 
-This module manages openknockd.
+This module manages knockd.
 
-## Class: knockd::server
+## Class: knockd
 
 A class for managing knockd server options
 
@@ -24,7 +24,7 @@ A class for managing knockd server options
 [*pidfile*]  
   pidfile to use when in daemon mode, (defaults to: /var/run/knockd.pid).
 
-[*interfacve:
+[*interface*]:
   network interface to listen on (mandatory).
 
 ### Examples
@@ -100,4 +100,4 @@ A defined type for managing knockd sequences
 ```
 
 ### Copyright:
-Copyright 2014 Alessio Cassibba (X-Drum), unless otherwise noted.
+Copyright 2015 Alessio Cassibba (X-Drum), unless otherwise noted.

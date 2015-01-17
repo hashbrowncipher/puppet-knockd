@@ -1,4 +1,4 @@
-# Class: knockd::init
+# Class: knockd::sequence
 #
 # A class for managing knockd configuration.
 #
@@ -62,7 +62,7 @@
 # 		stop_command       => '/usr/sbin/iptables -D INPUT -s %IP% -p tcp --syn --dport 22 -j ACCEPT',
 # }
 #
-# Copyright 2014 Alessio Cassibba (X-Drum), unless otherwise noted.
+# Copyright 2015 Alessio Cassibba (X-Drum), unless otherwise noted.
 #
 define knockd::sequence (
 	$sequence = $knockd::params::sequence,

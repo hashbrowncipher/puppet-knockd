@@ -2,7 +2,7 @@
 #
 # A class for managing knockd configuration.
 #
-# Copyright 2014 Alessio Cassibba (X-Drum), unless otherwise noted.
+# Copyright 2015 Alessio Cassibba (X-Drum), unless otherwise noted.
 #
 class knockd::params {
 	$service_name = 'knockd'
