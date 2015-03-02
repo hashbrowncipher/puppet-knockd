@@ -43,7 +43,7 @@ class knockd (
 		fail("Please specify a valid interface.")
 	}
 
-	if $::operatingsystem == Debian {
+	if $::osfamily == Debian {
 		file { "/etc/default/knockd":
 			ensure  => present,
 			owner   => $knockd::params::default_owner,
