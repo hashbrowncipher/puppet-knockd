@@ -31,7 +31,7 @@ class knockd::params {
 			$config_file = '/etc/knockd.conf'
 			$default_owner = 'root'
 			$default_group = 'root'
-			$package_name = 'knockd'
+			$package_name = 'knock-server'
 		}
 	}
 }
