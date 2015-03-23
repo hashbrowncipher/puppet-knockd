@@ -19,6 +19,7 @@ class knockd::params {
 	$start_command = undef
 	$stop_command = undef
 	$cmd_timeout = undef
+  $command = undef
 
 	case $::kernel {
 		FreeBSD: {
