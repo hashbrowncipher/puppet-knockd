@@ -20,6 +20,7 @@ class knockd::params {
 	$stop_command = undef
 	$cmd_timeout = undef
   $command = undef
+  $package_ensure = 'present'
 
 	case $::kernel {
 		FreeBSD: {

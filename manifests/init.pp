@@ -37,6 +37,7 @@ class knockd (
 	$logfile = $knockd::params::logfile,
 	$pidfile = $knockd::params::pidfile,
 	$interface = $knockd::params::interface,
+  $package_ensure = $knockd::params::package_ensure,
 ) inherits knockd::params {
 
 	if interface == undef {
